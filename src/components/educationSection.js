@@ -5,7 +5,7 @@ const tableData = education.map((item) =>
         <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
                 <div className="flex items-center h-full">
                     <div classname="flex-shrink-0 h-full">
-                        <img alt="profil" src={item.logo} className="mx-auto object-cover rounded-full h-10 w-16 "/>
+                        <img alt="profil" src={item.logo} className="mx-auto object-contain rounded-full h-10 w-16"/>
                     </div>
                     <div classname="ml-3">
                         <p className="text-gray-900 whitespace-no-wrap ml-8">
@@ -34,7 +34,7 @@ const tableData = education.map((item) =>
             </span>
         </td>
     </tr>
-)
+);
 
 export const EducationSection = () => {
   return (
@@ -70,5 +70,5 @@ export const EducationSection = () => {
             </div>
         </div>
     </div>
-  )
-}
+  );
+};

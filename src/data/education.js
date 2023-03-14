@@ -2,8 +2,6 @@ import muniLogo from '../images/muniLogo.jpg';
 import edu from '../images/edu.png';
 import uib from '../images/uib.png';
 
-
-
 export const education = [
     {
         school: 'Masaryk University',
@@ -14,7 +12,7 @@ export const education = [
 
     },
     {
-        school: 'EDU Effective Bussiness School',
+        school: 'EDU Effective Business School',
         studyProgram: 'Bussiness Law',
         between: '2021-2022',
         grade: 'LL.M.',
@@ -22,11 +20,10 @@ export const education = [
 
     },
     {
-        school: 'Universitete i Bergen',
+        school: 'Universitetet i Bergen',
         studyProgram: 'Law and Legal science',
         between: '2013',
         grade: 'Short-term study stay',
         logo: uib
-
     }
 ];
