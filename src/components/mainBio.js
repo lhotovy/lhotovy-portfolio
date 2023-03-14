@@ -5,5 +5,5 @@ export const MainBio = () => {
         <h1 className="mx-auto p-5 text-5xl">Test automation specialist, junior software developer</h1>
         <p className="mx-auto p-5 text-2xl">Some moto goes here</p>
     </div>
-  )
-}
+  );
+};
