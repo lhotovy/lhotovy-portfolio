@@ -1,6 +1,7 @@
 //import './App.css';
 import { ProfilePicture } from './components/profilePicture';
 import { Header } from './components/header';
+import { Body } from './components/body';
 
 
 export const App = () => {
@@ -8,6 +9,7 @@ export const App = () => {
     <div className='app object-cover w-full'>
       <Header />
       <ProfilePicture />
+      <Body />
     </div>
   )
 }
