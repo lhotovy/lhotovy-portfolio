@@ -3,8 +3,8 @@ import Popup from 'reactjs-popup';
 
 export const JobSection = () => {
   return (
-    <div id="experience" className="m-auto w-4/6 mb-28">
-        <h2 className="p-5 text-4xl ml-32 text-zinc-600 dark:text-slate-300">Work Experience</h2>
+    <div id="experience" className="m-auto w-10/12 mb-28">
+        <h2 className="p-5 text-4xl ml-60 text-zinc-600 dark:text-slate-300">Work Experience</h2>
         <div className="container max-w-6xl px-4 mx-auto sm:px-8">
             <div className="py-8">
                 <div className="px-4 py-4 -mx-4 overflow-x-auto sm:-mx-8 sm:px-8">
@@ -12,23 +12,23 @@ export const JobSection = () => {
                         <table className="min-w-full leading-normal">
                             <thead>
                                 <tr>
-                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
                                         Employer
                                     </th>
-                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
                                         Position
                                     </th>
-                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
                                         Between
                                     </th>
-                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200">
+                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
                                     </th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {experience.map((item) => 
                                     <tr className="h-27">
-                                        <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                        <td className="px-5 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300">
                                                 <div className="flex items-center h-full">
                                                     <div classname="flex-shrink-0 h-full">
                                                         <img alt="profil" src={item.logo} className="mx-auto object-contain rounded-full h-10 w-16"/>
@@ -40,18 +40,18 @@ export const JobSection = () => {
                                                     </div>
                                                 </div>
                                         </td>
-                                        <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                        <td className="px-5 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300">
                                             <p className="text-gray-900 whitespace-no-wrap">
                                                 {item.position}
                                             </p>
                                         </td>
-                                        <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                                        <td className="px-5 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300">
                                             <p className="text-gray-900 whitespace-no-wrap">
                                                 {item.between}
                                             </p>
                                         </td>
-                                        <td className="px-5 py-5 text-sm bg-white border-b border-gray-200 text-cyan-500">
-                                            <Popup modal trigger={<button className="button">Click for more info</button>}>
+                                        <td className="px-5 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300 text-cyan-600 dark:text-yellow-900">
+                                            <Popup modal trigger={<button className="button">More info</button>}>
                                                     {close => (
                                                         <div className="modal border-solid-slate-200 w-2/3 bg-slate-200 rounded-3xl m-auto text-s">
                                                             <div className="border-solid-slate-200">
