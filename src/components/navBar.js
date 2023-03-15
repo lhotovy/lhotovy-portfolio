@@ -2,12 +2,12 @@ export const NavBar = () => {
     const buttons = [["Education", "#education"], ["Working experience", "#experience"]];
     
     const navItems = buttons.map((button) =>
-        <a href={button[1]} className="inline-block p-4 border-b-2 text-zinc-600 
+        <a href={button[1]} className="inline-block p-4 border-b-2 text-zinc-600 dark:text-slate-300 
         border-transparent rounded-t-lg hover:text-black hover:border-gray-300"><li className="px-6 inline mr-2">{button[0]}</li></a>)
     
     return (
         <div className="navBar text-right flex w-2/3">
-            <ul className="flex items-center flex-wrap -mb-px">{navItems}</ul>
+            <ul className="flex items-center font-medium flex-wrap -mb-px">{navItems}</ul>
         </div>
   );
 };
