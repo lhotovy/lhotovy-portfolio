@@ -16,7 +16,7 @@ export const App = () => {
   }, [theme]);
 
   return (
-    <div className={`app object-cover w-full ${theme}`}>
+    <div className={`app object-cover dark:bg-slate-800 w-full ${theme}`}>
       <Header onClick={toggleTheme} />
       <ProfilePicture />
       <Body />

@@ -3,7 +3,6 @@ import { EducationSection } from "./educationSection";
 import { JobSection } from "./jobSection";
 import { MainBio } from "./mainBio";
 
-
 export const Body = () => {
 
   return (
