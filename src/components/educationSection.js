@@ -38,7 +38,7 @@ const tableData = education.map((item) =>
 
 export const EducationSection = () => {
   return (
-    <div className="m-auto w-2/3">
+    <div id="education" className="m-auto w-2/3">
         <h2 className="p-5 text-4xl ml-32 text-zinc-600">Education</h2>
         <div className="container max-w-5xl px-4 mx-auto sm:px-8">
             <div className="py-8">

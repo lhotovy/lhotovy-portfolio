@@ -1,5 +1,5 @@
 export const NavBar = () => {
-    const buttons = [["Bio", "bio"], ["Working experience", "experince"], ["Education", "education"]];
+    const buttons = [["Education", "#education"], ["Working experience", "#experience"]];
     
     const navItems = buttons.map((button) =>
         <a href={button[1]} className="inline-block p-4 border-b-2 text-zinc-600 
