@@ -3,8 +3,8 @@ import Popup from 'reactjs-popup';
 
 export const JobSection = () => {
   return (
-    <div id="experience" className="m-auto w-10/12 mb-28">
-        <h2 className=" text-4xl text-center text-zinc-600 dark:text-slate-300">Work Experience</h2>
+    <div id="experience" className="m-auto w-10/12 min-h-screen">
+        <h2 className="pt-36 text-4xl text-center text-zinc-600 dark:text-slate-300">Work Experience</h2>
         <div className="container max-w-6xl px-4 mx-auto sm:px-8">
             <div className="py-8">
                 <div className="px-4 py-4 -mx-4 overflow-x-auto sm:-mx-8 sm:px-8">

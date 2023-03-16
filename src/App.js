@@ -1,8 +1,11 @@
 //import './App.css';
-import { ProfilePicture } from './components/profilePicture';
-import { Header } from './components/header';
-import { Body } from './components/body';
 import { useEffect, useState } from 'react';
+import { Sidebar } from './components/sidebar';
+import { Routes, Route } from 'react-router-dom';
+import { EducationSection } from './components/educationSection';
+import { JobSection } from './components/jobSection';
+import { Home } from './components/home';
+import { ToggleButton } from './components/toggleButton';
 
 export const App = () => {
   const [theme, setTheme] = useState("light");
@@ -16,10 +19,14 @@ export const App = () => {
   }, [theme]);
 
   return (
-    <div className={`app object-cover dark:bg-slate-800 w-full ${theme}`}>
-      <Header onClick={toggleTheme} />
-      <ProfilePicture />
-      <Body />
+    <div className={`app dark:bg-slate-800 object-cover w-full ${theme}`}>
+      <Sidebar onClick={toggleTheme} />
+      <ToggleButton onClick={toggleTheme} />
+      <Routes>
+        <Route path='/home' element={<Home />} />
+        <Route path='/education' element={<EducationSection />} />
+        <Route path='/job' element={<JobSection />} />
+      </Routes>
     </div>
   )
 }
