@@ -1,4 +1,3 @@
-//import './App.css';
 import { useEffect, useState } from 'react';
 import { Sidebar } from './components/sidebar';
 import { Routes, Route } from 'react-router-dom';
@@ -20,7 +19,7 @@ export const App = () => {
 
   return (
     <div className={`app dark:bg-slate-800 object-cover w-full ${theme}`}>
-      <Sidebar onClick={toggleTheme} />
+      <Sidebar />
       <ToggleButton onClick={toggleTheme} />
       <Routes>
         <Route path='/home' element={<Home />} />
