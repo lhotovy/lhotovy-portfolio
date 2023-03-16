@@ -23,6 +23,7 @@ export const App = () => {
       <ToggleButton onClick={toggleTheme} />
       <Routes>
         <Route path='/home' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/education' element={<EducationSection />} />
         <Route path='/job' element={<JobSection />} />
       </Routes>
