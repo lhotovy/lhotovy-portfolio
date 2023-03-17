@@ -1,4 +1,4 @@
-import muniLogo from '../images/muniLogo.jpg';
+import muniLogo from '../images/muni.png';
 import edu from '../images/edu.png';
 import uib from '../images/uib.png';
 

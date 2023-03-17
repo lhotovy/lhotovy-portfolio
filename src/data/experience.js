@@ -1,5 +1,5 @@
 import automators from "../images/automators.jpg";
-import umpod from "../images/umpod.jpg";
+import umpod from "../images/umpod.png";
 import alethinos from "../images/alethinos.png";
 
 export const experience = [
