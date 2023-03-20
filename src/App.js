@@ -4,8 +4,8 @@ import { Routes, Route } from 'react-router-dom';
 import { EducationSection } from './components/educationSection';
 import { JobSection } from './components/jobSection';
 import { Home } from './components/home';
-import { ToggleButton } from './components/toggleButton';
 import { Skills } from './components/skills';
+import { Header } from './components/header';
 
 export const App = () => {
   const [theme, setTheme] = useState("light");
@@ -19,9 +19,9 @@ export const App = () => {
   }, [theme]);
 
   return (
-    <div className={`app dark:bg-slate-800 object-cover w-full ${theme}`}>
+    <div className={`app bg-light-bg dark:bg-dark-bg object-cover bg-no-repeat w-full ${theme}`}>
       <Sidebar />
-      <ToggleButton onClick={toggleTheme} />
+      <Header onClick={toggleTheme} />
       <Routes>
         <Route path='/home' element={<Home />} />
         <Route exact path='/' element={<Home />} />

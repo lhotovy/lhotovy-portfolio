@@ -3,7 +3,7 @@ import Popup from 'reactjs-popup';
 
 export const EducationSection = () => {
      return (
-        <div id="education" className="pt-36 dark:bg-slate-800 min-h-screen m-auto w-10/12 ">
+        <div id="education" className="pt-36 min-h-screen m-auto w-10/12 ">
             <h2 className="text-4xl  text-center text-zinc-600 dark:text-slate-300">Education</h2>
             <div className="container max-w-6xl px-4 mx-auto sm:px-8">
                 <div className="py-8 min-w-full">

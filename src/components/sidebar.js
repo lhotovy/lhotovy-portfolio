@@ -31,8 +31,7 @@ export const Sidebar = (props) => {
                         <NavIcon><i className="fa fa-fw fa-briefcase" style={{ fontSize: "1.5em"}} /></NavIcon>
                         <NavText>Work Experince</NavText>
                     </NavItem>
-                              
-                </SideNav.Nav>
+               </SideNav.Nav>
             </SideNav>
     )
 }

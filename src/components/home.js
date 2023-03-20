@@ -5,7 +5,7 @@ import { ProfilePicture } from "./profilePicture";
 export const Home = () => {
 
   return (
-    <div className="mx-auto pt-60 min-h-screen w-2/3 text-zinc-600 dark:bg-slate-800">
+    <div className="mx-auto pt-60 min-h-screen w-2/3 text-zinc-600">
         <ProfilePicture />
         <MainBio />
         <ButtonSection />
