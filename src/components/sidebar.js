@@ -13,7 +13,7 @@ export const Sidebar = (props) => {
                 navigate("/"+selected)
                 }} className="sidenav">
                 
-                <SideNav.Toggle />
+                <SideNav.Toggle name="sideBarToggle" />
                 <SideNav.Nav defaultSelected="home">
                     <NavItem eventKey="home">
                         <NavIcon><i className="fa fa-fw fa-briefcase" style={{ fontSize: "1.5em"}} /></NavIcon>
