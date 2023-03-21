@@ -17,7 +17,7 @@ export const Sidebar = () => {
                 <SideNav.Toggle name="sideBarToggle"/>
                 <SideNav.Nav defaultSelected="home">
                     <NavItem eventKey="home">
-                        <NavIcon><i className="fa fa-fw fa-briefcase text-xl" /></NavIcon>
+                        <NavIcon><i className="fa fa-fw fa-home text-xl" /></NavIcon>
                         <NavText>Home</NavText>
                     </NavItem>
                     <NavItem eventKey="skills">
