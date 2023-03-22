@@ -6,7 +6,6 @@ import { JobSection } from './components/jobSection';
 import { Home } from './components/home';
 import { Skills } from './components/skills';
 import { Header } from './components/header';
-import { LikeButton } from './components/likeButton';
 
 export const App = () => {
   const [theme, setTheme] = useState("light");
