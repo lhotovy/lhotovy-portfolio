@@ -7,7 +7,7 @@ export const Sidebar = () => {
   
     return (
             <SideNav 
-                style = {{ backgroundColor: "rgb(32, 82, 149)" }}
+                style = {{ backgroundColor: "rgb(12, 74, 110)", position: "absolute" }}
                 className="sidenav"
                 onSelect={(selected) => {
                 console.log(selected)

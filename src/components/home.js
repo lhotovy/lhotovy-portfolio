@@ -1,4 +1,5 @@
 import { ButtonSection } from "./buttonSection";
+import { LikeButton } from "./likeButton";
 import { MainBio } from "./mainBio";
 import { ProfilePicture } from "./profilePicture";
 
