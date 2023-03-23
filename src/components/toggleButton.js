@@ -1,6 +1,6 @@
 export const ToggleButton = (props) => {
   return (
-    <div className="dark:bg-slate-800">
+    <div className="dark:bg-slate-800 inline-block">
         <div className="absolute right-16 inline-block pt-8 w-12 align-middle select-none">
             <input onClick={props.onClick} type="checkbox" name="toggle" id="Blue" className="bg-sky-800 z-100 outline-none focus:outline-none right-6 
             checked:right-0 duration-200 ease-in absolute inline-block w-6 h-6 rounded-full border-4 appearance-none cursor-pointer"/>

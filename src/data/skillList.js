@@ -15,7 +15,6 @@ export const skillList = [
         skill: 'JavaScript',
         level: 'Intermediate',
         logo: js
-
     },
     {
         skill: 'React',
@@ -62,4 +61,19 @@ export const skillList = [
         level: 'Intermediate',
         logo: tosca
     }
+];
+
+export const certifications = [
+ {
+    name: "ISTQB Certified Tester Foundation Level",
+    link: "https://www.certible.com/verify/3a362d2036a09ca9e8a0aeb9dd8e219c/"
+ },
+ {
+    name: "Automation Specialist for API",
+    link: "https://verify.skilljar.com/c/wau3c5k2cwuj"
+ },
+ {
+    name: "Test Architect Level 1",
+    link: "https://verify.skilljar.com/c/i9rrnkt2iynz"
+ },
 ];
