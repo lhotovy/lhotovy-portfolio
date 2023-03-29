@@ -21,12 +21,12 @@ export const Sidebar = () => {
                         <NavText>Home</NavText>
                     </NavItem>
                     <NavItem eventKey="skills">
-                        <NavIcon><i className="fa-sharp fa-solid fa-screwdriver-wrench text-xl" /></NavIcon>
-                        <NavText>Skills</NavText>
+                        <NavIcon><i className="fa-solid fa-code text-xl" /></NavIcon>
+                        <NavText>IT skills and Certifications</NavText>
                     </NavItem>  
                     <NavItem eventKey="education">
                         <NavIcon><i className="fa fa-fw fa-user-graduate text-xl" /></NavIcon>
-                        <NavText>Education</NavText>
+                        <NavText>Education and Knowledge</NavText>
                     </NavItem>
                     <NavItem eventKey="job">
                         <NavIcon><i className="fa fa-fw fa-briefcase text-xl" /></NavIcon>

@@ -6,59 +6,59 @@ import git from '../images/icons/git.png';
 import github from '../images/icons/github.png';
 import python from '../images/icons/python.png';
 import vsc from '../images/icons/vsc.svg';
-import tosca from '../images/icons/tosca.webp';
+import tosca from '../images/icons/tosca.png';
 import cypress from '../images/icons/cypress.jpg';
 
 
 export const skillList = [
     {
         skill: 'JavaScript',
-        level: 'Intermediate',
+        level: '',
         logo: js
     },
     {
         skill: 'React',
-        level: 'Intermediate',
+        level: '',
         logo: react
     },
     {
         skill: 'Python',
-        level: 'Basic',
+        level: '',
         logo: python
     },
     {
         skill: 'HTML',
-        level: 'Intermediate',
+        level: '',
         logo: html
     },
     {
         skill: 'CSS',
-        level: 'Intermediate',
+        level: '',
         logo: css
     },
     {
-        skill: 'Visual Studio Code',
-        level: 'Intermediate',
+        skill: 'VS Code',
+        level: '',
         logo: vsc
     },
     {
         skill: 'Cypress',
-        level: 'Intermediate',
+        level: '',
         logo: cypress
     },
     {
         skill: 'GitHub',
-        level: 'Intermediate',
+        level: '',
         logo: github
     },
     {
         skill: 'Git',
-        level: 'Intermediate',
+        level: '',
         logo: git
     },
     {
         skill: 'Tricentis Tosca',
-        level: 'Intermediate',
+        level: '',
         logo: tosca
     }
 ];
@@ -75,5 +75,9 @@ export const certifications = [
  {
     name: "Test Architect Level 1",
     link: "https://verify.skilljar.com/c/i9rrnkt2iynz"
+ },
+ {
+    name: "Kiwi Cypress Weekend participation (hackaton)",
+    link: ""
  },
 ];

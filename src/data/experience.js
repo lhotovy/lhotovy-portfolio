@@ -1,6 +1,7 @@
 import automators from "../images/automators.jpg";
 import umpod from "../images/umpod.png";
 import alethinos from "../images/alethinos.png";
+import mc from "../images/mc.webp";
 
 export const experience = [
     {
@@ -16,6 +17,14 @@ export const experience = [
         position: "Lawyer",
         between: "2017 -2022",
         logo: umpod,
+        bio: "kjdfshdfbj",
+        bio_head: "hdjsf"
+    },
+    {
+        employer: "Mediation Centre Brno",
+        position: "Mediator",
+        between: "2018 - 2021",
+        logo: mc,
         bio: "kjdfshdfbj",
         bio_head: "hdjsf"
     },
