@@ -1,80 +1,77 @@
 import { experience } from "../data/experience";
-import Popup from 'reactjs-popup';
+import { useState, Fragment } from "react";
+import { Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
 
 export const JobSection = () => {
-  return (
-    <div id="experience" className="m-auto w-10/12 min-h-screen">
-        <h2 className="pt-36 text-4xl text-center text-zinc-600 dark:text-slate-300">Work Experience</h2>
-        <div className="container max-w-6xl px-4 mx-auto sm:px-8">
-            <div className="py-8">
-                <div className="px-4 py-4 -mx-4 overflow-x-auto sm:-mx-8 sm:px-8">
-                    <div className="inline-block min-w-full overflow-hidden rounded-lg shadow">
-                        <table className="min-w-full leading-normal">
-                            <thead>
-                                <tr>
-                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
-                                        Employer
-                                    </th>
-                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
-                                        Position
-                                    </th>
-                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
-                                        Between
-                                    </th>
-                                    <th scope="col" className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {experience.map((item) => 
-                                    <tr className="h-27">
-                                        <td className="px-5 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300">
-                                                <div className="flex items-center h-full">
-                                                    <div classname="flex-shrink-0 h-full">
-                                                        <img alt="profil" src={item.logo} className="mx-auto object-contain rounded-full h-10 w-16"/>
-                                                    </div>
-                                                    <div classname="ml-3">
-                                                        <p className="text-gray-900 whitespace-no-wrap ml-8">
-                                                            {item.employer}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                        </td>
-                                        <td className="px-5 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300">
-                                            <p className="text-gray-900 whitespace-no-wrap">
-                                                {item.position}
-                                            </p>
-                                        </td>
-                                        <td className="px-5 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300">
-                                            <p className="text-gray-900 whitespace-no-wrap">
-                                                {item.between}
-                                            </p>
-                                        </td>
-                                        <td className="px-5 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300 text-cyan-600 dark:text-yellow-900">
-                                            <Popup modal trigger={<button className="button">More info</button>}>
-                                                    {close => (
-                                                        <div className="modal border-solid-slate-200 w-2/3 bg-slate-200 rounded-3xl m-auto text-s">
-                                                            <div className="border-solid-slate-200">
-                                                                <button className="close cursor-pointer absolute right-30 top-0 bg-slate-500 text-white rounded-2xl block border-solid text-xl h-12 w-12" onClick={close}>
-                                                                &times;
-                                                                </button>
-                                                                <div className="header px-8 pt-6 w-full text-xl text-center">{item.bio_head}</div>
-                                                                <div className="content p-8">
-                                                                {item.bio}
+    const [open, setOpen] = useState(0);
+
+    const handleOpen = (value) => {
+        setOpen(open === value ? 0 : value);
+    };
+
+    return (
+        <Fragment>
+            <div id="experience" className="m-auto w-10/12 min-h-screen">
+                <h2 className="pt-36 text-4xl text-center text-zinc-600 dark:text-slate-300">Work Experience</h2>
+                <div className="container max-w-6xl px-4 mx-auto sm:px-8">
+                    <div className="py-8">
+                        <div className="px-4 py-4 overflow-x-auto sm:-mx-8 sm:px-8">
+                            <div className="w-full overflow-hidden rounded-lg shadow dark:bg-slate-300" >
+                                <div className="w-full leading-normal text-2xl rounded-lg border-gray-200">
+                                    <div className="flex">
+                                        <div className="inline-flex items-center w-2/3 pl-5 pr-20 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
+                                            Employer
+                                        </div>
+                                        <div className="inline-flex items-center w-1/3 pr-40 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
+                                            Position
+                                        </div>
+                                        <div className="inline-flex items-center w-1/6 pl-6 py-3 text-sm font-normal text-right text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
+                                            Between
+                                        </div>
+                                      </div>
+                                    <div>
+                                        {experience.map((item) =>
+                                            <Accordion open={open === item.id}>
+                                                <div>  
+                                                    <AccordionHeader className="py-0 my-0 px-0 mx-0 w-full dark:bg-slate-300" onClick={() => handleOpen(item.id)}>
+                                                    <div className="h-22 min-w-full flex">
+                                                        <div className="w-1/2 inline-flex py-5 text-base bg-white border-b dark:bg-slate-300">
+                                                            <div className="flex items-center h-full text-start">
+                                                                <div classname="h-full">
+                                                                    <img alt="profil" src={item.logo} className="mx-auto pl-4 object-contain h-16 w-16" />
+                                                                </div>
+                                                                <div >
+                                                                    <p className="text-gray-700 whitespace-no-wrap pl-8">
+                                                                        {item.employer}
+                                                                    </p>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    )}
-                                            </Popup>
-                                        </td>
-                                    </tr>
-                                )}
-                            </tbody>
-                        </table>
+                                                        <div className="w-1/3 inline-flex items-center pl-8 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300">
+                                                            <p className="text-gray-700 whitespace-no-wrap">
+                                                                {item.position}
+                                                            </p>
+                                                        </div>
+                                                        <div className="w-1/5 pr-6 pl-12 inline-flex items-center py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300"> 
+                                                            <p className="text-gray-700 whitespace-no-wrap w-full">
+                                                                    {item.between}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </AccordionHeader>
+                                                    <AccordionBody className="bg-slate-100 p-8 w-full dark:bg-slate-200">
+                                                        {item.bio}
+                                                    </AccordionBody>
+                                                </div>
+                                            </Accordion>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-  );
+        </Fragment>
+    );
 };

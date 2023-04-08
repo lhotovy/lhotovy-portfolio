@@ -10,7 +10,8 @@ export const education = [
         grade: 'Mgr.',
         logo: muniLogo,
         bio: "I obtained a masters degree in five year study programme covering wide range of legal fields.",
-        bio_head: "Masaryk University - Faculty of Law"
+        bio_head: "Masaryk University - Faculty of Law",
+        id: 1
     },
     {
         school: 'EDU Effective Business School',
@@ -19,7 +20,8 @@ export const education = [
         grade: 'LL.M.',
         logo: edu,
         bio: "I obtained a professional LL.M. degree in a one year remote study programme covering bussiness law, negotiation, soft skills and other topics related to company management",
-        bio_head: "EDU Effective Bussiness School"
+        bio_head: "EDU Effective Bussiness School",
+        id: 2
     },
     {
         school: 'Universitetet i Bergen',
@@ -28,6 +30,7 @@ export const education = [
         grade: 'Short-term study stay',
         logo: uib,
         bio: "I studied for 5 months on Universitet i Bergen, Norway, via Erasmus exchange programme (part of my legal degree at Masaryk University).",
-        bio_head: "Universitet i Bergen"
+        bio_head: "Universitet i Bergen",
+        id:3
     }
 ];
