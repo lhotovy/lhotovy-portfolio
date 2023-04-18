@@ -1,23 +1,46 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import Axios from 'axios';
+
+let likesDb;
 
 export const LikeButton = () => {
-    const [likes, setLikes] = useState(0);
-    const [isClicked, setIsClicked] = useState(false);
   
-    const handleClick = () => {
+  const [likes, setLikes] = useState(1);
+  const [isClicked, setIsClicked] = useState(false);
+
+  useEffect(() => {
+    Axios.get("http://localhost:3001/likes_counter").then((response) => {
+      likesDb = response.data[response.data.length-1]["num_of_likes"];
+      setLikes(likesDb);
+  }, [])});
+
+  const handleClick = () => {
+            
       if (isClicked) {
-        setLikes(likes - 1);
+        Axios.post("http://localhost:3001/create", {num_of_likes: likes - 1}).then(() => {
+        }).then(() => {
+           Axios.get("http://localhost:3001/likes_counter").then((response) => {
+              likesDb = response.data[response.data.length-1]["num_of_likes"];
+              setLikes(likesDb);
+          });
+        });     
       } else {
-        setLikes(likes + 1);
-      }
-      setIsClicked(!isClicked);
+          Axios.post("http://localhost:3001/create", {num_of_likes: likes + 1}).then(() => {          
+          }).then(() => {
+            Axios.get("http://localhost:3001/likes_counter").then((response) => {
+                likesDb = response.data[response.data.length-1]["num_of_likes"];
+                setLikes(likesDb);
+                });
+          });
+        };
+      setIsClicked(!isClicked);   
     };
   
     return (
-      <div className="bg-slate-200 dark:bg-sky-900 inline-flex mt-4 absolute left-20 h-12 w-1/8 rounded text-center">
+      <div className="bg-slate-200 inline-flex mt-4 absolute left-20 h-12 w-1/8 rounded text-center">
       <button className={ `like-button ${isClicked && 'liked'} p-2 text-center` } onClick={handleClick}>
-        <i className="fa-solid fa-thumbs-up text-2xl px-2 text-blue-800 dark:text-slate-200" />
-        <span className="likes-counter pr-2 dark:text-slate-200">{ `Like my page | ${likes}` }</span>
+        <i className={`fa-solid fa-thumbs-up ${isClicked ? 'text-black' : 'text-sky-900'} text-xl pr-4}`} />
+        <span className={`likes-counter font-medium px-2 `}>{ `${isClicked ? 'Unlike' : 'Like'} | ${likes}` }</span>
       </button>
       </div>
     );

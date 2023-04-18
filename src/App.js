@@ -7,6 +7,7 @@ import { Home } from './components/home';
 import { Skills } from './components/skills';
 import { Header } from './components/header';
 
+
 export const App = () => {
   const [theme, setTheme] = useState("light");
 
@@ -22,6 +23,7 @@ export const App = () => {
     <div className={`app bg-light-bg dark:bg-dark-bg object-cover bg-no-repeat w-full ${theme}`}>
       <Sidebar />
       <Header onClick={toggleTheme} />
+     
       <Routes>
         <Route path='/home' element={<Home />} />
         <Route exact path='/' element={<Home />} />
