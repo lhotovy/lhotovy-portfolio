@@ -20,9 +20,9 @@ export const App = () => {
   }, [theme]);
 
   return (
-    <div className={`app bg-light-bg dark:bg-dark-bg object-cover bg-no-repeat w-full ${theme}`}>
+    <div className={`app bg-light-bg dark:bg-dark-bg object-cover bg-no-repeat min-h-screen w-full ${theme}`}>
       <Sidebar />
-      <Header onClick={toggleTheme} />
+      <Header onClick={toggleTheme} theme={theme} />            
      
       <Routes>
         <Route path='/home' element={<Home />} />

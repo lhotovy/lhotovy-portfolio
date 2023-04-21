@@ -56,3 +56,10 @@ serv.get("/likes_counter", (req, res) => {
 serv.listen(3001, () => {
     console.log("Running on 3001");
 })
+
+// const { Client } = require("pg");
+// const client = new Client(process.env.DATABASE_URL)
+// client.connect();
+// client.listen(3001, () => {
+//     console.log("Running on 3009");
+// })

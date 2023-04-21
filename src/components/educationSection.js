@@ -11,7 +11,7 @@ export const EducationSection = () => {
 
     return (
         <Fragment>
-            <div id="experience" className="m-auto w-10/12 min-h-screen">
+            <div id="experience" className="m-auto w-10/12 min-h-full">
                 <h2 className="pt-36 text-4xl text-center text-zinc-600 dark:text-slate-300">Education</h2>
                 <div className="container max-w-6xl px-4 mx-auto sm:px-8">
                     <div className="py-8">

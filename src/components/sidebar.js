@@ -8,7 +8,7 @@ export const Sidebar = () => {
     return (
             <SideNav 
                 style = {{ backgroundColor: "rgb(12, 74, 110)", position: "absolute" }}
-                className="sidenav"
+                className="sidenav sticky"
                 onSelect={(selected) => {
                 console.log(selected)
                 navigate("/"+selected)
