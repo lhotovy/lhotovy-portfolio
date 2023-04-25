@@ -1,5 +1,5 @@
 import { education } from "../data/education";
-import { useState, Fragment } from "react";
+import { useState } from "react";
 import { Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
 
 export const EducationSection = () => {
@@ -10,76 +10,76 @@ export const EducationSection = () => {
     };
 
     return (
-        <Fragment>
-            <div id="experience" className="m-auto w-10/12 min-h-full">
-                <h2 className="pt-36 text-4xl text-center text-zinc-600 dark:text-slate-300">Education</h2>
-                <div className="container max-w-6xl px-4 mx-auto sm:px-8">
-                    <div className="py-8">
-                        <div className="px-4 py-4 overflow-x-auto sm:-mx-8 sm:px-8">
-                            <div className="w-full overflow-hidden rounded-lg shadow dark:bg-slate-300" >
-                                <div className="w-full leading-normal text-2xl rounded-lg border-gray-200">
-                                    <div className="flex">
-                                        <div className="inline-flex items-center w-2/3 pl-5 pr-20 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
-                                            School
-                                        </div>
-                                        <div className="inline-flex items-center w-1/3 pr-40 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
-                                            Study Program
-                                        </div>
-                                        <div className="inline-flex items-center w-1/6 pl-6 py-3 text-sm font-normal text-right text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
-                                            Between
-                                        </div>
-                                        <div className="inline-flex items-center w-1/6 pl-6 py-3 text-sm font-normal text-right text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
-                                            Grade
-                                        </div>
-                                      </div>
-                                    <div>
-                                        {education.map((item) =>
-                                            <Accordion open={open === item.id}>
-                                                <div>  
-                                                    <AccordionHeader className="py-0 my-0 px-0 mx-0 w-full dark:bg-slate-300" onClick={() => handleOpen(item.id)}>
-                                                    <div className="h-22 min-w-full flex">
-                                                        <div className="w-1/2 inline-flex py-5 text-base bg-white border-b dark:bg-slate-300">
-                                                            <div className="flex items-center h-full text-start">
-                                                                <div classname="h-full">
-                                                                    <img alt="profil" src={item.logo} className="mx-auto pl-4 object-contain h-16 w-16" />
-                                                                </div>
-                                                                <div >
-                                                                    <p className="text-gray-700 whitespace-no-wrap pl-8">
-                                                                        {item.school}
-                                                                    </p>
-                                                                </div>
+        <>
+        <div id="experience" className="m-auto w-11/12 md:w-10/12 min-h-full">
+            <h2 className="pt-20 text-2xl md:text-4xl text-center text-zinc-600 dark:text-slate-300">Education</h2>
+            <div className="container md:max-w-6xl px-2 mx-auto">
+                <div className="py-8">
+                    <div className="py-4 overflow-x-auto">
+                        <div className="w-full overflow-hidden rounded-lg shadow dark:bg-slate-300" >
+                            <div className="w-full leading-normal rounded-lg border-gray-200">
+                                <div className="flex bg-white ">
+                                    <div className="inline-flex items-center w-1/2 pl-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
+                                        School
+                                    </div>
+                                    <div className="md:inline-flex hidden items-center w-1/3 pl-4 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
+                                        Study Program
+                                    </div>
+                                    <div className="md:inline-flex w-1/2 md:w-1/6 pr-5 pl-2 py-3 text-sm font-normal text-end text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
+                                        Between
+                                    </div>
+                                    <div className="md:inline-flex hidden w-1/2 md:w-1/6 pr-5 pl-2 py-3 text-sm font-normal text-end text-gray-800 uppercase bg-white border-b border-gray-200 dark:bg-slate-300">
+                                        Grade
+                                    </div>
+                                  </div>
+                                <div>
+                                    {education.map((item) =>
+                                        <Accordion open={open === item.id}>
+                                            <div>  
+                                                <AccordionHeader className="p-0 m-0 w-full dark:bg-slate-300" onClick={() => handleOpen(item.id)}>
+                                                <div className="h-22 min-w-full flex bg-white">
+                                                    <div className="md:w-1/2 w-2/3 md:inline-flex hidden py-5 text-sm md:text-base bg-white border-b dark:bg-slate-300">
+                                                        <div className="flex items-center h-full text-start">
+                                                            <div classname="h-full visibility:hidden">
+                                                                <img alt="profil" src={item.logo} className="mx-auto pl-4 object-contain h-16 w-16 hidden md:inline" />
+                                                            </div>
+                                                            <div >
+                                                                <p className="text-gray-700 whitespace-no-wrap pl-5">
+                                                                    {item.school}
+                                                                </p>
                                                             </div>
                                                         </div>
-                                                        <div className="w-1/3 inline-flex items-center pl-8 py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300">
-                                                            <p className="text-gray-700 whitespace-no-wrap">
-                                                                {item.studyProgram}
-                                                            </p>
-                                                        </div>
-                                                        <div className="w-1/5 pr-6 pl-12 inline-flex items-center py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300"> 
-                                                            <p className="text-gray-700 whitespace-no-wrap w-full">
-                                                                    {item.between}
-                                                            </p>
-                                                        </div>
-                                                        <div className="w-1/5 pr-6 pl-12 inline-flex items-center py-5 text-base bg-white border-b border-gray-200 dark:bg-slate-300"> 
-                                                            <p className="text-gray-700 whitespace-no-wrap w-full">
-                                                                    {item.grade}
-                                                            </p>
-                                                        </div>
                                                     </div>
-                                                </AccordionHeader>
-                                                    <AccordionBody className="bg-slate-100 p-8 w-full dark:bg-slate-200">
-                                                        {item.bio}
-                                                    </AccordionBody>
+                                                    <div className="w-1/2 md:w-1/3 inline-flex text-start items-center pl-4 py-5 text-sm md:text-base bg-white border-b border-gray-200 dark:bg-slate-300">
+                                                        <p className="text-gray-700 whitespace-no-wrap">
+                                                            {item.studyProgram}
+                                                        </p>
+                                                    </div>
+                                                    <div className="w-1/2 md:w-1/6 pr-6 md:pl-2 text-right md:text-start inline-flex items-center py-5 text-sm md:text-base bg-white border-b border-gray-200 dark:bg-slate-300"> 
+                                                        <p className="text-gray-700 whitespace-no-wrap w-full">
+                                                                {item.between}
+                                                        </p>
+                                                    </div>
+                                                    <div className="w-1/3 md:w-1/6 pr-6 md:pl-2 md:inline-flex hidden  text-right md:text-start inline-flex items-center py-5 text-sm md:text-base bg-white border-b border-gray-200 dark:bg-slate-300">
+                                                    <p className="text-gray-700 whitespace-no-wrap w-full">
+                                                                {item.grade}
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                            </Accordion>
-                                        )}
-                                    </div>
+                                            </AccordionHeader>
+                                                <AccordionBody className="bg-slate-100 p-8 w-full dark:bg-slate-200">
+                                                    {item.bio}
+                                                </AccordionBody>
+                                            </div>
+                                        </Accordion>
+                                    )}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </Fragment>
-    );
+        </div>
+    </>
+    )
 };

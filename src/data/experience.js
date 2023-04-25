@@ -15,7 +15,7 @@ export const experience = [
     {
         employer: "Office of International Legal Protection of Children",
         position: "Lawyer",
-        between: "2017 -2022",
+        between: "2017-2022",
         logo: umpod,
         bio: "I provided clients with legal support and guidance in the field of international private (family) law, also representing children at court proceedings. I also provided medition services both in Czech and English language.",
         id: 2
@@ -23,7 +23,7 @@ export const experience = [
     {
         employer: "Mediation Centre Brno",
         position: "Mediator",
-        between: "2018 - 2021",
+        between: "2018-2021",
         logo: mc,
         bio: "I provided with professional family mediation services in Czech and English, focusing on transformative mediation model.",
         id: 3
@@ -31,7 +31,7 @@ export const experience = [
     {
         employer: "Mgr. Adam Russ, attorney",
         position: "Associate of law firm",
-        between: "2016- 2017",
+        between: "2016-2017",
         logo: alethinos,
         bio: "I worked as an associate at law firm with general legal practise.",
         id: 4
