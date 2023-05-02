@@ -37,10 +37,10 @@ export const LikeButton = () => {
     };
   
     return (
-      <div className="bg-slate-200 mt-6  w-1/8 rounded text-center text-lg md:text-xl">
+      <div className="bg-slate-200 mt-6  w-1/8 rounded text-center text-lg md:text-xl px-2">
       <button className={`like-button ${isClicked && 'liked'} p-2 text-center`} onClick={handleClick}>
-        <i className={`fa-solid fa-thumbs-up ${isClicked ? 'text-black' : 'text-sky-900'} pr-4}`} />
-        <span className={`likes-counter hidden md:inline-block font-medium px-2`}>{ `${isClicked ? 'Unlike' : 'Like'} | ${likes}` }</span>
+        <i className={`fa-solid fa-thumbs-up ${isClicked ? 'text-black' : 'text-sky-900'} }`} />
+        <span className={`likes-counter hidden md:inline-block tracking-wide font-medium text-lg pl-2`}>{ `${isClicked ? 'Unlike' : 'Like'} | ${likes}` }</span>
       </button>
       </div>
     );
