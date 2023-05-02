@@ -9,7 +9,7 @@ import { SideBar } from './components/sideNav';
 import React from 'react';
 
 export const App = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");

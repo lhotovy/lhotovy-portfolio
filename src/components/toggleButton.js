@@ -9,5 +9,10 @@ export const ToggleButton = (props) => {
       button = <DarkModeIcon onClick={props.onClick} />
   }
 
-  return button;
+  return (
+    <div className="pt-1">
+      {button}
+    </div>
+    
+  )  
 };

@@ -13,7 +13,7 @@ export const navs = [
     },
     {
         id: 3,
-        name: "Education and Knowledge",
+        name: "Education",
         icon: "fa fa-fw fa-user-graduate text-xl",
         link: "/education"
     },

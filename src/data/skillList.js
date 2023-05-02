@@ -57,7 +57,7 @@ export const skillList = [
         logo: git
     },
     {
-        skill: 'Tricentis Tosca',
+        skill: 'Tosca',
         level: '',
         logo: tosca
     }
