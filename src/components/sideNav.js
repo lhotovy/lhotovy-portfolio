@@ -14,10 +14,10 @@ export const SideBar = () => {
                 <ul className="pt-6">
                     {navs.map((nav, id) => (
                         <>
-                            <li key={id} className="text-white hover:bg-slate-700 text-sm flex items-center gap-x-4 cursor-pointer p-2 rounded-md mt-2">
+                            <li key={id} className="text-white hover:bg-slate-700 text-sm flex justify-start items-center gap-x-4 cursor-pointer p-2 rounded-md mt-2">
                                 <Link to={nav.link}>
-                                    <i className={nav.icon}/>
-                                    <span className={`${!open && "hidden"} flex-1 font-medium ml-4`}>{nav.name}</span>
+                                    <i className={`${nav.icon} inline-flex justify-center`}/>
+                                    <span className={`${!open && "hidden"} inline-flex justify-start flex-1 font-medium tracking-wider ml-4`}>{nav.name}</span>
                                 </Link>                 
                             </li>
                         </>
@@ -28,7 +28,7 @@ export const SideBar = () => {
                 <ul className="flex flex-row">
                     {navs.map((nav, id) => (
                         <>
-                            <li key={id} className="text-white hover:bg-slate-700 text-sm flex items-center gap-y-8 cursor-pointer p-2 rounded-md mx-2">
+                            <li key={id} className="text-white hover:bg-slate-700 text-sm flex items-center gap-y-8 cursor-pointer p-1 rounded-md mx-3">
                                 <Link to={nav.link}>
                                         <i className={nav.icon}/>                                   
                                 </Link>      

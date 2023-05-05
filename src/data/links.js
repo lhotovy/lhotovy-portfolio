@@ -23,4 +23,10 @@ export const navs = [
         icon: "fa fa-fw fa-briefcase text-xl",
         link: "/job"
     },
+    {
+        id: 5,
+        name: "My other projects",
+        icon: "fa fa-light fa-list-check text-xl",
+        link: "/projects"
+    },
 ]

@@ -60,7 +60,7 @@ export const EducationSection = () => {
                                                                 {item.between}
                                                         </p>
                                                     </div>
-                                                    <div className="w-1/3 md:w-1/6 pr-6 md:pl-2 md:inline-flex hidden  text-right md:text-start inline-flex items-center py-5 text-sm md:text-base bg-white border-b border-gray-200 dark:bg-slate-300">
+                                                    <div className="w-1/3 md:w-1/6 pr-6 md:pl-2 md:inline-flex hidden text-right md:text-start items-center py-5 text-sm md:text-base bg-white border-b border-gray-200 dark:bg-slate-300">
                                                     <p className="text-gray-700 whitespace-no-wrap w-full">
                                                                 {item.grade}
                                                         </p>

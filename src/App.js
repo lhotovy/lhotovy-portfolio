@@ -7,6 +7,7 @@ import { Skills } from './components/skills';
 import { Header } from './components/header';
 import { SideBar } from './components/sideNav';
 import React from 'react';
+import { Projects } from './components/projects';
 
 export const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -31,6 +32,7 @@ export const App = () => {
         <Route path='/education' element={<EducationSection />} />
         <Route path='/job' element={<JobSection />} />
         <Route path='/skills' element={<Skills />} />
+        <Route path='/projects' element={<Projects />} />
       </Routes>
   </div>
   )
