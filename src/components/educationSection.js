@@ -12,7 +12,7 @@ export const EducationSection = () => {
     return (
         <>
         <div id="experience" className="m-auto w-11/12 md:w-10/12 min-h-full">
-            <h2 className="pt-20 text-2xl md:text-4xl text-center text-zinc-600 dark:text-slate-300">Education</h2>
+            <h2 className="pt-20 text-2xl md:text-4xl text-center text-zinc-600 dark:text-slate-300 tracking-wide">Education</h2>
             <div className="container md:max-w-6xl px-2 mx-auto">
                 <div className="py-8">
                     <div className="py-4 overflow-x-auto">

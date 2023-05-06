@@ -5,7 +5,7 @@ import React from "react";
 import { navs } from "../data/links";
 
 export const SideBar = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     
     return (
         <>

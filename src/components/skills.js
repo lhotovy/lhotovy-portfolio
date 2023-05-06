@@ -2,7 +2,8 @@ import { skillList } from "../data/skillList"
 
 export const Skills = () => {
     return (
-        <div className="md:flex md:my-auto w-4/5 mx-auto md:ml-64">
+        <div className="md:my-auto w-4/5 mx-auto md:ml-64">
+            <h2 className="pt-20 text-2xl block md:text-4xl text-center text-zinc-600 dark:text-slate-300 tracking-wide">What I know</h2>
             <div className="md:flex-wrap flex-block md:inline-flex items-center justify-center  text-center sm:flex w-full mx-auto pt-10 pb-20">
                 {skillList.map((item) =>
                     <div className=" bg-white rounded-lg drop-shadow-xl w-28 h-28 m-3 md:w-1/4 lg:w-1/6 dark:bg-gray-800 inline-flex">
