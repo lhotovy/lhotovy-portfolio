@@ -9,7 +9,7 @@ export const experience = [
         position: "Test automation specialist",
         between: "since 11/2022",
         logo: automators,
-        bio: "With Automators I am testing internal development projects with Cypress, focusing on Front-end and API testing.",
+        bio: "With Automators I am testing application development projects, with Cypress and Tosca among others, focusing mainly on Front-end and API testing. I can also perform less complex developer tasks.",
         id: 1
     },
     {
