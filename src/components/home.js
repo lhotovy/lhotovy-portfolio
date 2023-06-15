@@ -5,7 +5,7 @@ import { ProfilePicture } from "./profilePicture";
 export const Home = () => {
 
   return (
-    <div className="w-4/5 mx-auto block pb-20 md:mt-24">    
+    <div className="w-vw h-vw mx-auto block pb-20 md:mt-24">    
       <div className="mx-auto mt-12 w-4/5 text-zinc-600 flex justify-center">
           <ProfilePicture />
       </div>
