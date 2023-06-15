@@ -1,4 +1,5 @@
 import { skillList } from "../data/skillList"
+import { Certifications } from "./certifications"
 
 export const Skills = () => {
     return (
@@ -20,6 +21,9 @@ export const Skills = () => {
                     </div>
                 )}
             </div>
+            <div className="flex justify-center">
+                <Certifications/>
+            </div>            
         </div>
     )
 }
