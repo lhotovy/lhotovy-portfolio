@@ -2,9 +2,9 @@ import { certifications } from "../data/skillList";
 
 export const Certifications = () => {
     return (
-        <div className="pt-8 block md:inline-flex w-1/3 flex-col justify-center">
+        <div className="md:pt-8 inline-flex md:w-1/2 flex-col justify-center">
             {certifications.map((certification) =>
-                <div className="flex items-left justify-start text-xl pb-8 h-4">
+                <div className="flex items-left justify-start md:text-xl text-sm pb-8 h-4">
                     <div classname="flex-shrink-0 h-full">
                         <i className="fa-solid fa-check text-green-800 dark:text-green-500" />
                     </div>

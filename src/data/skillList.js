@@ -8,6 +8,8 @@ import python from '../images/icons/python.png';
 import vsc from '../images/icons/vsc.svg';
 import tosca from '../images/icons/tosca.png';
 import cypress from '../images/icons/cypress.jpg';
+import istqb from "./istqb.pdf";
+import kiwi from "./kiwi.pdf";
 
 
 export const skillList = [
@@ -66,7 +68,7 @@ export const skillList = [
 export const certifications = [
  {
     name: "ISTQB Certified Tester Foundation Level",
-    link: "https://www.certible.com/verify/3a362d2036a09ca9e8a0aeb9dd8e219c/"
+    link: istqb
  },
  {
     name: "Automation Specialist for API",
@@ -78,6 +80,6 @@ export const certifications = [
  },
  {
     name: "Kiwi Cypress Weekend participation (hackaton)",
-    link: ""
+    link: kiwi
  },
 ];
