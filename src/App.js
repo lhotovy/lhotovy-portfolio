@@ -22,7 +22,7 @@ export const App = () => {
 
   return (
     
-    <div className={`app md:flex md:flex-col bg-light-bg dark:bg-dark-bg object-cover bg-no-repeat min-h-screen ${theme} h-vw w-vw`}>
+    <div className={`app md:flex md:flex-col bg-light-bg dark:bg-dark-bg object-contain bg-no-repeat min-h-screen ${theme} h-vw w-vw`}>
       <SideBar />
       <Header onClick={toggleTheme} theme={theme} />            
     
